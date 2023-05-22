@@ -1,14 +1,5 @@
-.formLivro{
-margin: 50px;
-}
-.formLogin .col-12 {
-    margin-right: 25%;
-    margin-left: 25%;
-}
-.formLogin .col-md-6{
-    margin-right: 25%;
-    margin-left: 25%;
-}
-.formLogin .btn{
-    margin-right: 410px;
+.formLivro {
+    margin-top: 25%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
