@@ -1,131 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/menuH.css">
-    <title>Editoras</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/menuH.css">
+  <title>Editoras</title>
 </head>
+
 <body>
-      <header>
-        <nav class="menu">
-          <div class="menuEsquerdo">
-            <h1>Santa Monica Studio</h1>
-          </div>
-          <div class="menuLista">
-            <ul>
-                <li class="ItemMenu"><a href="index.html" class="linkItem">Home</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Acervo</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Livros</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Editoras</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Autores</a></li>
-            </ul>
-          </div>
-          <div class="menuDireito">
-            <a href="#">Entrar</a>
-          </div>
-          <div class="menuBotao">
-            <button onclick="abrirMenu()">
-                <span class="material-symbols-outlined" id="icone">
-                    menu
-                </span>
-            </button>
-          </div>
-       </nav>
-      </header>
+  <header>
+    <nav class="menu">
+      <div class="menuEsquerdo">
+        <h1>Santa Monica Studio</h1>
+      </div>
+      <div class="menuLista">
+        <ul>
+          <li class="ItemMenu"><a href="index.html" class="linkItem">Home</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Acervo</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Livros</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Editoras</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Autores</a></li>
+        </ul>
+      </div>
+      <div class="menuDireito">
+        <a href="#">Entrar</a>
+      </div>
+      <div class="menuBotao">
+        <button onclick="abrirMenu()">
+          <span class="material-symbols-outlined" id="icone">
+            menu
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-      <main class="container mt-3">
-        <form class="row g-3">
-          <div class="col-md-4">
-            <label for="validationServer01" class="form-label">Nome Editora:</label>
-            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
-            <div class="valid-feedback">
-              Editora válida!
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Email:</label>
-              <input type="email" class="form-control is-invalid" id="exampleFormControlInput1" placeholder="nome@example.com">
-              <div id="validationServerUsernameFeedback" class="invalid-feedback" aria-describedby="inputGroupPrepend3 validationUsernameFeedback" required>
-                Por favor, insira o Email da editora.
+  <main class="container mt-3">
+    <!-- <form action="">
+            <div class="row g-3">
+                <div class="col">
+                    <label for="numero1" class="form-label">Número 1</label>
+                  <input type="text" class="form-control" placeholder="Número 1" aria-label="Número 1" name="numero1" id="numero1">
+                </div>
+                <div class="col">
+                    <label for="numero2" class="form-label">Número 2</label>
+                  <input type="text" class="form-control" placeholder="Número 2" aria-label="Número 2" name="numero2" id="numero2">
+                </div>
+                <div class="col">
+                    <label for="form-label">Resultado</label>
+                    <input type="text" name="resultado" id="resultado" class="form-control">
+                </div>
               </div>
-            </div>
-            <div class="col-auto">
-              <label for="inputPassword2" class="visually-hidden">Senha:</label>
-              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Confirmar Identidade</button>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationServer02" class="form-label">Descrição da Editora:</label>
-            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
-            <div class="valid-feedback">
-              Muito bem!
-            </div>
-          </div>
-          <div class="col-md-4">
-            <label for="validationServerUsername" class="form-label">Instagram da Editora</label>
-            <div class="input-group has-validation">
-              <span class="input-group-text" id="inputGroupPrepend3">@</span>
-              <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationUsernameFeedback" required>
-              <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                Por favor, insira o username da editora.
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <label for="validationServer03" class="form-label">Cidade de Origem:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
-            <div id="validationServer03Feedback" class="invalid-feedback">
-              Por favor, insira uma cidade válida.
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label for="validationServer04" class="form-label">Gêneros literários:</label>
-            <select class="form-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-              <option selected disabled value="">Escolha...</option>
-              <option>Terror</option>
-              <option>Ação</option>
-              <option>Drama</option>
-              <option>Ficção Científica</option>
-              <option>Romance</option>
-            </select>
-            <div id="validationServer04Feedback" class="invalid-feedback">
-              Por favor, selecione um gênero.
-            </div>
-          </div>
-          <div class="col-md-3">
-            <label for="validationServer05" class="form-label">Página da Web:</label>
-            <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-            <div id="validationServer05Feedback" class="invalid-feedback">
-              Por favor, insira a URL da Pág Editora.
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="form-check">
-              <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
-              <label class="form-check-label" for="invalidCheck3">
-                Aceitar os Termos e Condições
-              </label>
-              <div id="invalidCheck3Feedback" class="invalid-feedback">
-                Você deve concordar antes de enviar.
-              </div>
-            </div>
-          </div>
-          <div class="col-12">
-            <button class="btn btn-primary" type="submit">Enviar.</button>
-          </div>
-        </form>
-      </main>
+              <button type="button" class="btn btn-info" id="btnSomar">Calcular</button>
+        </form> -->
 
-      <footer>
+    <form action="">
+      <div class="mb-3">
+        <label for="alturaIMC" class="form-label">Informe sua altura:</label>
+        <input type="text" class="form-control" id="alturaIMC" placeholder="Ex: 1,85" name="alturaIMC"
+          aria-label="Altura">
+      </div>
+      <div class="mb-3">
+        <label for="pesoIMC" class="form-label">Informe seu peso:</label>
+        <input type="text" class="form-control" id="pesoIMC" placeholder="Ex: 53,5" name="pesoIMC" aria-label="Peso">
+      </div>
+      <div class="mb-3">
+        <label for="form-label">Resultado</label>
+        <input type="text" name="resultado" id="resultado" class="form-control">
+      </div>
+      </div>
+      <button type="button" class="btn btn-info" id="btnSomar">Calcular</button>
+    </form>
+  </main>
+  <footer>
 
       </footer>
-      <script src="js/script.js"></script>
+      <script src="js/calculos.js"></script>
 </body>
+
 </html>
