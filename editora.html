@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>Editoras</title>
-</head>
-<body>
-      <header>
-        <nav class="menu">
-          <div class="menuEsquerdo">
-            <h1>Santa Monica Studio</h1>
-          </div>
-          <div class="menuLista">
-            <ul>
-                <li class="ItemMenu"><a href="index.html" class="linkItem">Home</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Acervo</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Livros</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Editoras</a></li>
-                <li class="ItemMenu"><a href="#" class="linkItem">Autores</a></li>
-            </ul>
-          </div>
-          <div class="menuDireito">
-            <a href="#">Entrar</a>
-          </div>
-          <div class="menuBotao">
-            <button onclick="abrirMenu()">
-                <span class="material-symbols-outlined" id="icone">
-                    menu
-                </span>
-            </button>
-          </div>
-       </nav>
-      </header>
 
-      <main class="container mt-3">
-        <!-- <form action="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/menuH.css">
+  <title>Editoras</title>
+</head>
+
+<body>
+  <header>
+    <nav class="menu">
+      <div class="menuEsquerdo">
+        <h1>Santa Monica Studio</h1>
+      </div>
+      <div class="menuLista">
+        <ul>
+          <li class="ItemMenu"><a href="index.html" class="linkItem">Home</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Acervo</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Livros</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Editoras</a></li>
+          <li class="ItemMenu"><a href="#" class="linkItem">Autores</a></li>
+        </ul>
+      </div>
+      <div class="menuDireito">
+        <a href="#">Entrar</a>
+      </div>
+      <div class="menuBotao">
+        <button onclick="abrirMenu()">
+          <span class="material-symbols-outlined" id="icone">
+            menu
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-3">
+    <!-- <form action="">
             <div class="row g-3">
                 <div class="col">
                     <label for="numero1" class="form-label">Número 1</label>
@@ -55,27 +60,28 @@
               <button type="button" class="btn btn-info" id="btnSomar">Calcular</button>
         </form> -->
 
-        <form action="">
-          <div class="mb-3">
-            <label for="alturaIMC" class="form-label">Informe sua altura:</label>
-            <input type="text" class="form-control" id="alturaIMC" placeholder="Ex: 1,85" name="alturaIMC" aria-label="Altura">
-          </div>
-          <div class="mb-3">
-            <label for="pesoIMC" class="form-label">Informe seu peso:</label>
-            <input type="text" class="form-control" id="pesoIMC" placeholder="Ex: 53,5" name="pesoIMC" aria-label="Peso">
-          </div>
-            <div class="mb-3">
-              <label for="form-label">Resultado</label>
-              <input type="text" name="resultado" id="resultado" class="form-control">
-          </div>
-          </div>
-          <button type="button" class="btn btn-info" id="btnSomar">Calcular</button>
-        </form>
-      </main>
+    <form action="">
+      <div class="mb-3">
+        <label for="alturaIMC" class="form-label">Informe sua altura:</label>
+        <input type="text" class="form-control" id="alturaIMC" placeholder="Ex: 1,85" name="alturaIMC"
+          aria-label="Altura">
+      </div>
+      <div class="mb-3">
+        <label for="pesoIMC" class="form-label">Informe seu peso:</label>
+        <input type="text" class="form-control" id="pesoIMC" placeholder="Ex: 53,5" name="pesoIMC" aria-label="Peso">
+      </div>
+      <div class="mb-3">
+        <label for="form-label">Resultado</label>
+        <input type="text" name="resultado" id="resultado" class="form-control">
+      </div>
+      </div>
+      <button type="button" class="btn btn-info" id="btnSomar">Calcular</button>
+    </form>
+  </main>
+  <footer>
 
-      <footer>
-
-      </footer>
-      <script src="js/calculos.js"></script>
+  </footer>
+  <script src="js/calculos.js"></script>
 </body>
+
 </html>
