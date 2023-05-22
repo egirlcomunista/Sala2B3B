@@ -8,7 +8,7 @@
     align-items: center;
 }
 .menuEsquerdo h1{
-    color: azure;
+    color: rgba(133, 30, 30, 0.952);
 }
 .menuLista{
     display: flex;
@@ -27,7 +27,7 @@
     text-decoration: none;
     font-size: 14pt;
     font-weight: 400;
-    color: azure;
+    color: rgba(133, 30, 30, 0.952);
     padding: 0 15px;
 }
 .menuDireito a{
