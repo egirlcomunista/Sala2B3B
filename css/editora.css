@@ -1,0 +1,13 @@
+.row g-3 needs-validation{
+    margin: 10px;
+}
+.col-md-8{
+    align-items: center;
+    margin-left: 25px;
+    margin-inline-start: 50px;
+    max-width: 25%;
+}
+.col-auto{
+    margin-top: 35px;
+}
+
